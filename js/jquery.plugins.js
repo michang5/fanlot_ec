@@ -297,7 +297,61 @@ null&&this.captionsButton.addClass("mejs-captions-enabled");this.selectedTrack=t
  * Date: Dec 5, 2014
  */
 
-(function(e){"use strict";e.fn.hsCounter=function(t){var n=e.extend({delay:50,signPos:"after",classVisible:"countup-vis",decimalSeparator:".",orderSeparator:" "},t);return this.each(function(){if(t){e.extend(n,t)}var r=e(this),i=e(window),s=i.scrollTop(),o=i.height(),u=r.data("num"),a=r.data("increment"),f=r.data("fractional")?r.data("fractional"):0,l=r.data("sign")?r.data("sign"):"",c=/(\d)(?=(\d\d\d)+([^\d]|$))/g,h=r.data("start")?+r.data("start"):0,p=e(".countup-amount"),d,v,m,g;if(s<=r.offset().top&&s+o>=r.offset().top&&!r.hasClass(n.classVisible)){d=setTimeout(function y(){if(h<u){h+=a}else{h=u}v=h.toFixed(f).replace(".",n.decimalSeparator).replace(c,"$1"+n.orderSeparator);g=r.find(p).html(v);if(n.signPos=="after"){r.html('<span class="countup-amount">'+v+"</span>"+"&nbsp;"+'<span class="countup-sign">'+l+"</span>")}else if(n.signPos=="before"){r.html('<span class="countup-sign">'+l+"</span>"+"&nbsp;"+'<span class="countup-amount">'+v+"</span>")}if(r.hasClass("progress-up")){r.html(r.html()+"<ins/>");r.find("ins").css("width",h+"%")}if(r.parent().hasClass("countup-wrap")){m=r.parent().find(".countup-line");m.css("width",h+"%")}d=setTimeout(y,n.delay)},n.delay);r.addClass(n.classVisible)}})}})(jQuery);
+(function (e) {
+    "use strict";
+    e.fn.hsCounter = function (t) {
+        var n = e.extend({
+            delay: 50,
+            signPos: "after",
+            classVisible: "countup-vis",
+            decimalSeparator: ".",
+            orderSeparator: " "
+        }, t);
+        return this.each(function () {
+            if (t) {
+                e.extend(n, t)
+            }
+            var r = e(this),
+                i = e(window),
+                s = i.scrollTop(),
+                o = i.height(),
+                u = r.data("num"),
+                a = r.data("increment"),
+                f = r.data("fractional") ? r.data("fractional") : 0,
+                l = r.data("sign") ? r.data("sign") : "",
+                c = /(\d)(?=(\d\d\d)+([^\d]|$))/g,
+                h = r.data("start") ? +r.data("start") : 0,
+                p = e(".countup-amount"),
+                d, v, m, g;
+            if (s <= r.offset().top && s + o >= r.offset().top && !r.hasClass(n.classVisible)) {
+                d = setTimeout(function y() {
+                    if (h < u) {
+                        h += a
+                    } else {
+                        h = u
+                    }
+                    v = h.toFixed(f).replace(".", n.decimalSeparator).replace(c, "$1" + n.orderSeparator);
+                    g = r.find(p).html(v);
+                    if (n.signPos == "after") {
+                        r.html('<span class="countup-amount">' + v + "</span>" + "&nbsp;" + '<span class="countup-sign">' + l + "</span>")
+                    } else if (n.signPos == "before") {
+                        r.html('<span class="countup-sign">' + l + "</span>" + "&nbsp;" + '<span class="countup-amount">' + v + "</span>")
+                    }
+                    if (r.hasClass("progress-up")) {
+                        r.html(r.html() + "<ins/>");
+                        r.find("ins").css("width", h + "%")
+                    }
+                    if (r.parent().hasClass("countup-wrap")) {
+                        m = r.parent().find(".countup-line");
+                        m.css("width", h + "%")
+                    }
+                    d = setTimeout(y, n.delay)
+                }, n.delay);
+                r.addClass(n.classVisible)
+            }
+        })
+    }
+})(jQuery);
 
 /*
  PanoScroll v1.3
