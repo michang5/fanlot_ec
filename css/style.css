@@ -1639,7 +1639,7 @@ textarea:-ms-input-placeholder,
 }
 
 form{
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .form-group:before,.form-group:after{
@@ -1652,7 +1652,7 @@ form{
 }
 
 .form-group:last-of-type{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .form-group [class*=col-]{
@@ -2134,7 +2134,7 @@ form .btn + p{
 }
 
 .woocommerce-page h3{
-    margin-bottom: 85px;
+    margin-bottom: 45px;
 }
 
 .woocommerce-page h4{
@@ -2150,7 +2150,7 @@ form .btn + p{
 }
 
 .woocommerce-page .page-header{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .woocommerce-page #calculateshipping .form-group:last-of-type{
@@ -2194,7 +2194,7 @@ form .btn + p{
 
 .order-info{
     border-radius: 3px;
-    padding: 66px 0 58px;
+    padding: 46px 0 38px;
     font-size: 24px;
 }
 
@@ -2236,7 +2236,7 @@ form .btn + p{
 }
 
 .table > tbody > tr:first-child > td{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .shop_table.cart tbody > tr > td{
@@ -2337,7 +2337,7 @@ td.product-name{
 }
 
 .coupon{
-    padding: 50px 60px 0;
+    padding: 30px 30px 0;
     margin-top: -1px;
 }
 
@@ -2476,7 +2476,7 @@ td.product-name{
 }
 
 .tab-content h3{
-    margin-bottom: 23px;
+    margin-bottom: 14px;
 }
 
 .nav-tabs{
@@ -3034,6 +3034,7 @@ td.product-name{
     text-align:center;
     font-size:1px;
     width:100%;
+    padding: 0 10px;
     position: absolute;
     bottom:-65px;
 }
@@ -3716,7 +3717,7 @@ a.add-review:hover{
 .catalog-bar h4,
 .rating-wrap,
 .product h2 {
-    margin-bottom:30px;
+    margin-bottom:16px;
 }
 
 .product-table a {
@@ -5473,7 +5474,7 @@ img.mfp-img {
     }
 
     .woocommerce-page h3{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .coupon{
@@ -5574,7 +5575,9 @@ img.mfp-img {
         padding: 75px 25px 10px;
         text-align: left;
     }
-
+    .mainmenu {
+        text-align: right;
+    }
     .navbar-toggle{
         margin-left: 0;
     }
@@ -5601,9 +5604,12 @@ img.mfp-img {
 
     .mainmenu li.cart-list,
     .mainmenu li.cart-list-empty{
-        margin-left: 21px;
+        margin-left: 3px;
     }
-
+    .mainmenu li.cart-list a span,
+    .mainmenu li.cart-list-empty{
+        display: none;
+    }
     .oneslider .arrow.prev{
         left: 10px;
     }
