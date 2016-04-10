@@ -494,7 +494,7 @@ button,
 .alert{
     background-color: transparent;
     padding: 0;
-    margin: -60px 0 30px;
+/*    margin: -60px 0 30px;*/
     text-align: center;
     text-transform: uppercase;
     font-size: 24px;
@@ -642,7 +642,8 @@ button,
 .block-link{
     background-color: #E7543D !important;
     border-radius: 3px;
-    padding: 60px 50px 25px 22px;
+/*    padding: 60px 50px 25px 22px;*/
+    padding: 20px;
     text-transform: uppercase;
     font-size: 30px;
     line-height: 1.15;
@@ -650,14 +651,15 @@ button,
     text-align: left;
     display: block;
     z-index: 3;
-    margin-bottom: -100px;
+/*    margin-bottom: -100px;*/
     position: absolute;
-    margin-top: -40px;
+/*    margin-top: -40px;*/
     max-width: 245px;
 }
 
 .block-link.right{
-    right: 40px;
+    left: 20px;
+    top: -40px;
 }
 
 .block-link:hover,
@@ -679,14 +681,14 @@ button,
 
 .sticker {
     position: absolute;
-    top:40px;
-    left: 30px;
+    top: 20px;
+    left: 20px;
     z-index: 2;
     border-radius: 5px;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    font-size: 19px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
     text-transform: uppercase;
     text-align: center;
     display: table;
@@ -2150,7 +2152,7 @@ form .btn + p{
 }
 
 .woocommerce-page .page-header{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .woocommerce-page #calculateshipping .form-group:last-of-type{
@@ -2596,6 +2598,7 @@ td.product-name{
 
 .ribbon{
     font-size: 0;
+    position: relative;
 }
 
 .ribbon .container{
@@ -3492,7 +3495,7 @@ ul.nav-category li a.active:after{
 }
 
 .product{
-    margin-bottom: 65px;
+    margin-bottom: 35px;
 }
 
 .slider .product{
@@ -3534,7 +3537,7 @@ ul.nav-category li a.active:after{
     position:absolute;
     top:50%;
     margin-top:-25px;
-    left:50%;
+    left: 44%;
     margin-left:-78px;
     width:180px;
     z-index:4;
@@ -3944,6 +3947,12 @@ a.add-review:hover{
 .nav-single a:hover small{
     color: #8c8c8c;
 }
+/*
+.nav-previous, .nav-next {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+*/
 
 .nav-previous small{
     margin: 0 0 5px -19px;
@@ -3954,7 +3963,7 @@ a.add-review:hover{
 }
 
 .comments-area header{
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .comments-area header h3{
@@ -3966,7 +3975,7 @@ a.add-review:hover{
 }
 
 .comments-area .comment{
-    margin: 0 0 40px;
+    margin: 0 0 20px;
 }
 
 .comments-area .comment > *:first-child{
@@ -3978,11 +3987,12 @@ a.add-review:hover{
 }
 
 .addcomment{
-    margin: 65px 0 0;
+    margin: 25px 0 0;
 }
 
 .addcomment h3{
     margin-bottom: 42px;
+    margin-left: 0;
 }
 
 
@@ -4773,8 +4783,8 @@ img.mfp-img {
 }
 
 .error404 .header{
-    position: fixed;
-    top: 0;
+/*    position: fixed;*/
+/*    top: 0;*/
     z-index: 1;
 }
 
@@ -4788,7 +4798,7 @@ img.mfp-img {
 
 .error404 .footer{
     background-color: transparent;
-    position: fixed;
+/*    position: fixed;*/
     bottom: 50px;
 }
 
