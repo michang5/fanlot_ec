@@ -954,11 +954,12 @@ opacity: .8;
 
 .mainmenu li{
     margin: 0 0 0 21px;
+    display: inline-block;
 }
 
 .mainmenu li.cart-list,
 .mainmenu li.cart-list-empty{
-    margin-left: 35px;
+/*    margin-left: 35px;*/
 }
 
 .mainmenu ul ul li.current-menu-item>a{
@@ -989,7 +990,6 @@ opacity: .8;
     display: block;
     font-size: 16px;
 }
-
 .cart-list > a ins,
 .cart-list-empty > a ins{
     padding: 1px 12px 0;
@@ -5008,12 +5008,12 @@ img.mfp-img {
     .mainmenu .navbar-collapse{
         position: fixed;
         right: 0;
-        top: 0;
-        width: 400px;
+        top: 80px;
+        width: 100%!important;
         height: 100% !important;
         min-height: 100%;
-        background-color: #262626;
-        padding: 105px 40px 20px;
+        background-color: #eee;
+        padding: 20px 40px;
         z-index: 19;
         overflow: auto;
         color: #808080;
@@ -5582,14 +5582,15 @@ img.mfp-img {
 @media screen and (max-width: 480px) {
     .mainmenu .navbar-collapse{
         width: 320px;
-        padding: 75px 25px 10px;
+        padding: 25px 25px 10px;
         text-align: left;
     }
     .mainmenu {
         text-align: right;
     }
     .navbar-toggle{
-        margin-left: 0;
+        margin-left: 10px;
+        margin-right: 14px;
     }
 
     .dropdown .dropdown-menu > li{
@@ -5608,13 +5609,13 @@ img.mfp-img {
 
     .mainmenu > button,
     .mainmenu > ul{
-        float: none !important;
+/*        float: none !important;*/
         display: inline-block;
     }
 
     .mainmenu li.cart-list,
     .mainmenu li.cart-list-empty{
-        margin-left: 3px;
+/*        margin-left: 3px;*/
     }
     .mainmenu li.cart-list a span,
     .mainmenu li.cart-list-empty{

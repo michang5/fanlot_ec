@@ -7,9 +7,11 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/fanlot_style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" >
     <!-- Yokko - Responsive Multipurpose Template - v.1.3 -->
 </head>
-<body class="home">
+<body class="home" data-spy="scroll" data-target=".navbar" >
 
 <!-- Preloader -->
 <div id="preloader">
@@ -17,7 +19,7 @@
 </div>
 
 <!-- HEADER -->
-<header class="header">
+<header class="header navbar navbar-fixed-top affix" data-spy="affix">
     <div class="container">
     <div class="col-xs-3">
         <a href="index.html" class="logo">豐樂網</a>
@@ -27,14 +29,32 @@
         <nav class="navbar mainmenu">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                
+                <a href="#" class="nav-open">
+  <div class="inner"><span>menu</span></div></a>
+               
+                
+<!--
+                <a class='burger' href='#'>
+                    <div class='burger-stack'>
+                        <b class='srt'>Menu</b>
+                    </div>
+                </a>
+-->
             </button>
-            <ul class="pull-right">
+            <ul class="user pull-right">
+                <li>
+                    <a href=""><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-user"></i></a>
+                </li>
                 <!-- Cart-list -->
                 <li class="cart-list">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/ico-cart.png" alt=""> 購物車 <ins>3</ins></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>購物車</span>                               <ins>3</ins>
+                    </a>
                     <div class="dropdown-menu">
                         <ul>
                             <li>
@@ -74,7 +94,7 @@
                 <!-- /.cart-list -->
             </ul>
             <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
-                <button type="button" class="pclose" data-toggle="collapse" data-target="#navbar-collapse"></button>
+<!--                <button type="button" class="pclose" data-toggle="collapse" data-target="#navbar-collapse"></button>-->
                 <ul class="nav navbar-nav pull-right">
                     <li class="current-menu-item dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">首頁</a>
@@ -563,5 +583,9 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.plugins.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/custom_fanlot.js"></script>
+<script>
+    
+    </script>
 </body>
 </html>
