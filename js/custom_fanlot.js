@@ -27,7 +27,13 @@ $(function () {
             
         }
     });
-    $('.nav a').on('click', function () {
-        $('.navbar-toggle').click()
+//    $('.nav a').on('click', function () {
+//        $('.navbar-toggle').click()
+//    });
+    
+    $('.dropdown-menu input, .dropdown-menu label').click(function(e) {
+        e.stopPropagation();
     });
+    
+    
 });
