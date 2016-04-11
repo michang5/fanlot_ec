@@ -1,87 +1,168 @@
+.navbar-toggle {
+/*
+	width: 60px;
+	height: 35px;
+*/
+/*	border: 1px solid #999;*/
+}
+.navbar > button {
+	padding: 0;
+	margin-top: 4px;
+/*	width: 42px;*/
+}
+.navbar {
+	min-height: 36px;
+}
 .nav-open {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+/*
+	left: 0;
+	position: absolute;
+	top: 50%;
+	border: 1px solid #999;
+	height: 30px;
+	width: 42px;
+*/
 }
-.nav-open .inner::before, .nav-open .inner::after {
-  background-color: #e7543d;
-  content: "";
-  display: block;
-  height: 2px;
-  width: 42px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-.nav-open .inner {
-    height: 40px;
-}
-.nav-open .inner {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-20%, -20%);
-          transform: translate(-20%, -20%);
-}
-.nav-open .inner span {
-    opacity: 1;
-    color: #e7543d;
-}
-.nav-open .inner::before {
-  margin-top: 0px;
-  position: absolute;
-}
+.nav-open .inner::before,
 .nav-open .inner::after {
-  margin-top: 0px;
-  position: absolute;
+	background-color: #e7543d;
+	content: "";
+	display: block;
+	height: 2px;
+	width: 42px;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.nav-open .inner {
+	height: 30px;
+	width: 42px;
+	padding-top: 4px;
+}
+
+.nav-open .inner {
+/*	left: 50%;*/
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-20%, -20%);
+	transform: translate(-20%, -20%);
+}
+
+.nav-open .inner span {
+	opacity: 1;
+	color: #e7543d;
+}
+
+.nav-open .inner::before {
+	margin-top: 0px;
+	position: absolute;
+}
+
+.nav-open .inner::after {
+	margin-top: 0px;
+	position: absolute;
 }
 
 .nav-open.nav-close .inner {
-  background-color: transparent;
-  left: 54%;
+	background-color: transparent;
+	left: 54%;
 }
+
 .nav-open.nav-close .inner span {
-  -webkit-transition: opacity .3s ease-in-out;
-    -moz-transition: opacity .3s ease-in-out;
-    -ms-transition: opacity .3s ease-in-out;
-    -o-transition: opacity .3s ease-in-out;
-     opacity: 0;
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-ms-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	opacity: 0;
 }
-.nav-open.nav-close .inner::before, .nav-open.nav-close .inner::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
-  width: 42px;
-}
+
+.nav-open.nav-close .inner::before,
 .nav-open.nav-close .inner::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	width: 42px;
 }
+
+.nav-open.nav-close .inner::after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
 .dropdown-menu li {
-    display: block;
+	display: block;
 }
-.user li {
-    
+.header {
+	position: fixed;
+	background: white;
+	width: 100%;
 }
-.header{
-    position: fixed;
-    background: #fff;
-    width: 100%;
+.header h2 {
+	display: inline-block;
+	margin-bottom: 0;
 }
-.affix {
-    
-/*    background: red;*/
-  }
 .past-main {
-    background: red;
+	border-bottom: 1px solid #ccc;
 }
+.past-main .container {
+	padding: 10px!important;
+}
+
 .wrapper {
-    padding-top: 100px;
+	padding-top: 100px;
+}
+.mainmenu {
+	display: inline-block;
+	float: right;
+}
+.mainmenu > li{
+    margin: 0 0 0 4px;
+	width: 30px;
+}
+.mainmenu ul > li > a {
+	display: block;
+	text-align: center;
+}
+
+@media screen and (max-width: 980px){
+	.mainmenu .navbar-collapse {
+		min-height: 1000px;
+		padding: 0;
+	}
+	.home .header {
+		padding-bottom: 0;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.home .header > .container {
+		padding-left: 18px;
+		padding-right: 38px;
+	}
 }
 @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 26px;
-    }
+	.logo {
+		font-size: 26px;
+	}
+	.mainmenu {
+/*		padding-right: 10px;*/
+	}
+	.navbar > button {
+		margin-left: 20px;
+	}
+	.mainmenu > li {
+		width: 30px;
+	}
+	.cart-list > a ins, .cart-list-empty > a ins {
+		padding: 1px 6px 0;
+		margin-left: 2px;
+	}
+	.cart-list .fig img {
+		width: 80px;
+	}
+	.home .header > .container {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
 }
