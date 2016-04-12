@@ -5,7 +5,7 @@
 */
 /*	border: 1px solid #999;*/
 }
-.navbar > button {
+.navbar-header > button {
 	padding: 0;
 	margin-top: 4px;
 /*	width: 42px;*/
