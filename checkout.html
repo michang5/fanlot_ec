@@ -136,11 +136,18 @@
     </header>
     <!-- /.page-header -->
 
+<!--
     <div class="alert alert-danger">優惠券代碼不存在</div>
     <div class="alert alert-success hidden">購物車已更新</div>
+-->
 
     <!-- CONTAINER -->
     <article class="container inforow">
+       	<article class="container text-center" style="margin-bottom: 40px;">
+       		<h3 class="text-center margin-10">會員才能享有好願金權利，結帳前請先登入或加入會員</h3>
+			<a href="login.html" class="btn btn-default btn-lg">會員登入</a>
+			<a href="login.html" class="btn btn-default btn-lg">註冊會員</a>
+		</article>
         <div class="col-sm-6">
             <div class="ship-header clearfix">
                 <h4>帳單地址</h4>
@@ -437,6 +444,7 @@
                     </div>
                 </div>
             </form>
+<!--
             <div class="checkbox text-primary">
                 <label data-toggle="collapse" data-target="#createanaccaunt">
                     <input type="checkbox">
@@ -459,6 +467,7 @@
                     </div>
                 </form>
             </div>
+-->
         </div>
         <div class="col-sm-6">
             <div class="ship-header clearfix">
@@ -771,7 +780,7 @@
                     <thead>
                     <tr>
                         <th></th>
-                        <th class="text-left">產敏</th>
+                        <th class="text-left">產品</th>
                         <th class="text-center">單價</th>
                         <th class="text-center">數量</th>
                         <th class="text-center">小計</th>
@@ -795,7 +804,82 @@
                     </tbody>
                 </table>
             </div>
+            <div class="Shipping-conditions clearfix">
+            	<div class="col-sm-5">
+            		<h4>寄送地點</h4>
+            		<div class="col-sm-6">
+            			<div class="radio">
+							<label data-toggle="collapse" data-target="#location" data-parent="#payment">
+								<input type="radio" name="location" checked>
+								本島
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-6">
+            			<div class="radio">
+							<label data-toggle="collapse" data-target="#location" data-parent="#payment">
+								<input type="radio" name="location" checked>
+								離島
+							</label>
+						</div>
+					</div>
+				</div>
+            	<div class="col-sm-7">
+            		<h4>付款方式</h4>
+            		<div class="col-sm-6">
+            			<div class="radio">
+							<label data-toggle="collapse" data-target="#payment" data-parent="#payment">
+								<input type="radio" name="payment">
+								PayPal / 信用卡
 
+							</label>
+                    	</div>
+					</div>
+					<div class="col-sm-6">
+            			<div class="radio">
+							<label data-toggle="collapse" data-target="#payment" data-parent="#payment">
+								<input type="radio" name="location" checked>
+								智付寶
+							</label>
+						</div>
+					</div>
+				</div>
+           		<div class="col-sm-12">
+           			<h4>發票形式</h4>
+           			<div class="panel-group" id="invoice">
+						<div class="panel clearfix">
+							<div class="radio">
+								<label data-toggle="collapse" data-target="#invoice-1" data-parent="#invoice">
+									<input type="radio" name="invoice" checked>
+									二聯式電子發票
+								</label>
+							</div>
+							<div id="invoice-1" class="collapse in invoice col-md-7">
+							</div>
+						</div>
+						<div class="panel clearfix">
+							<div class="radio">
+								<label data-toggle="collapse" data-target="#invoice-2" data-parent="#invoice">
+									<input type="radio" name="invoice">
+									三聯式紙本發票(公司行號報帳用)
+								</label>
+							</div>
+							<div id="invoice-2" class="collapse invoice col-md-7" data-parent="true">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="公司名稱">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="統一編號">
+								</div>
+							</div>
+						</div>
+					</div>
+        	
+				</div>
+            	
+            </div>
+
+<!--
             <div class="coupon bg-info text-left clearfix">
                 <form class="form-inline">
                     <div class="form-group">
@@ -804,10 +888,11 @@
                     <button class="btn btn-info btn-thn" type="submit">兌換</button>
                 </form>
             </div>
+-->
         </div>
     </article>
     <!-- /.container -->
-
+	
     <!-- CONTAINER -->
     <article class="container no-padding-top">
         <div class="col-sm-6 col-sm-offset-6">
@@ -825,51 +910,6 @@
                     <td class="text-primary">$ 2.840,00</td>
                 </tr>
             </table>
-        </div>
-    </article>
-    <!-- /.container -->
-
-    <hr/>
-
-    <!-- CONTAINER -->
-    <article class="container">
-        <div class="col-sm-12">
-            <div class="panel-group" id="payment">
-                <div class="panel clearfix">
-                    <div class="radio">
-                        <label data-toggle="collapse" data-target="#payment-1" data-parent="#payment">
-                            <input type="radio" name="payment" checked>
-                            銀行轉帳
-                        </label>
-                    </div>
-                    <div id="payment-1" class="collapse in payment col-md-7">
-                        <p>如要透過銀行匯款來支付，請將您的訂單編號寫入備註欄位，以利作業。在確認款項存入指定帳戶前，貨品不會寄出</p>
-                    </div>
-                </div>
-                <div class="panel clearfix">
-                    <div class="radio">
-                        <label data-toggle="collapse" data-target="#payment-2" data-parent="#payment">
-                            <input type="radio" name="payment">
-                            第二種付款方式
-                        </label>
-                    </div>
-                    <div id="payment-2" class="collapse payment col-md-7" data-parent="true">
-                        <p>第二種付款方式的說明在這裡</p>
-                    </div>
-                </div>
-                <div class="panel clearfix">
-                    <div class="radio">
-                        <label data-toggle="collapse" data-target="#payment-3" data-parent="#payment">
-                            <input type="radio" name="payment">
-                            PayPal / 信用卡
-                            <img src="http://placehold.it/38x24" alt="">
-                        </label>
-                    </div>
-                    <div id="payment-3" class="collapse payment col-md-7">
-                        <p>透過 PayPal 付款。如果您沒有 PayPal 帳號，可以透過信用卡付款</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </article>
     <!-- /.container -->
