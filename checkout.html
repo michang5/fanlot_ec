@@ -7,7 +7,8 @@
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- Yokko - Responsive Multipurpose Template - v.1.3 -->
+    <link href="css/fanlot_style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" >
 </head>
 <body class="page woocommerce-page">
 
@@ -16,146 +17,118 @@
     <div id="status">&nbsp;</div>
 </div>
 
-<!-- HEADER -->
-<header class="header">
-    <div class="container">
-    <div class="col-xs-3">
-        <a href="index.html" class="logo">豐樂網</a>
-    </div>
-    <div class="col-xs-9">
-        <!-- Mainmenu -->
-        <nav class="navbar mainmenu">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <ul class="pull-right">
-                <!-- Cart-list -->
-                <li class="cart-list">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/ico-cart.png" alt=""><span>購物車</span><ins>3</ins></a>
-                    <div class="dropdown-menu">
-                        <ul>
-                            <li>
-                                <a href="product.html" class="fig text-center pull-left"><img src="http://placehold.it/130x150" alt=""></a>
-                                <div>
-                                    <a href="product.html">塑膠椅</a>
-                                        <span class="price">
-                                            <span class="amount">1 x $47,50</span>
+<!-- Navigation -->
+<div id="navigation">
+	<nav id="top-header" class="navbar navbar-fixed-top clearfix" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<h2 class="logo">
+							<a href="#page-top">豐樂網</a>
+						</h2>
+				</div>
+				<div class="col-sm-9">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<a href="#" class="nav-open">
+								<div class="inner"><span>menu</span></div>
+							</a>
+						</button>
+					</div>
+					<ul class="side-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="search-menu" aria-expanded="false" aria-haspopup="true"><i class="fa fa-search"></i></a>
+							<ul class="dropdown-menu search" aria-labelledby="search-menu">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="搜尋" />
+									<span class="input-group-btn">
+											<button class="btn btn-search" type="submit">GO</button>
                                         </span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="product.html" class="fig text-center pull-left"><img src="http://placehold.it/130x150" alt=""></a>
-                                <div class="block">
-                                    <a href="product.html">塑膠椅</a>
-                                        <span class="price">
-                                            <span class="amount">3 x $89,99</span>
-                                        </span>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="product.html" class="fig text-center pull-left"><img src="http://placehold.it/130x150" alt=""></a>
-                                <div class="block">
-                                    <a href="product.html">塑膠椅</a>
-                                        <span class="price">
-                                            <span class="amount">1 x $ 7.900,99</span>
-                                        </span>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="hcart-total">
-                            <a href="cart.html" class="btn btn-default btn-sm pull-left">購物車</a>
-                            <div class="total pull-left">總計 - <ins>$164,50</ins></div>
-                        </div>
-                    </div>
-                </li>
-                <!-- /.cart-list -->
-            </ul>
-            <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
-                <button type="button" class="pclose" data-toggle="collapse" data-target="#navbar-collapse"></button>
-                <ul class="nav navbar-nav pull-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">首頁</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="start_agency.html">Agency</a></li>
-                            <li><a href="start_portfolio.html">Portfolio</a></li>
-                            <li><a href="start_ecommerce.html">eCommerce</a></li>
-                            <li><a href="start_business.html">Business</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">內文</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="clients.html">Clients</a></li>
-                            <li><a href="works.html">Works</a></li>
-                            <li><a href="single_project_1.html">Single Work</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="404.html">Error 404</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">部落格</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog_list.html">Blog List</a></li>
-                            <li><a href="blog_post.html">Blog Post</a></li>
-                            <li><a href="blog_post_sidebar.html">Blog Post with Sidebar</a></li>
-                            <li><a href="post_gallery.html">Gallery Post</a></li>
-                            <li><a href="post_audio.html">Audio Post</a></li>
-                            <li><a href="post_video.html">Video Post</a></li>
-                            <li><a href="post_link.html">Link Post</a></li>
-                            <li><a href="post_quote.html">Quote Post</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown current-menu-item">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">商店</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="catalog_grid.html">Catalog Grid</a></li>
-                            <li><a href="catalog_grid_sidebar_1.html">Catalog Grid Right Sidebar</a></li>
-                            <li><a href="catalog_grid_sidebar_2.html">Catalog Grid Left Sidebar</a></li>
-                            <li><a href="catalog_list.html">Catalog List</a></li>
-                            <li><a href="catalog_list_sidebar_1.html">Catalog List Right Sidebar</a></li>
-                            <li><a href="catalog_list_sidebar_2.html">Catalog List Left Sidebar</a></li>
-                            <li><a href="product.html">Product Page</a></li>
-                            <li><a href="cart.html">Shopping Cart</a></li>
-                            <li><a href="cart_empty.html">Shopping Cart Empty</a></li>
-                            <li class="current-menu-item"><a href="checkout.html">Proceed to Checkout</a></li>
-                            <li><a href="confirmation.html">Confirmation Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">帳戶</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="lost_password.html">Lost Password</a></li>
-                            <li><a href="change_password.html">Change Password</a></li>
-                            <li><a href="account.html">My Account</a></li>
-                            <li><a href="shipping_address.html">Edit Shipping Address</a></li>
-                            <li><a href="billing_address.html">Edit Billing Address</a></li>
-                            <li><a href="order_list.html">Order List</a></li>
-                            <li><a href="order_view.html">View Order</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- /.mainmenu -->
-    </div>
-    </div>
-</header>
-<!-- /.header -->
+								</div>
+							</ul>
+						</li>
+						<li class="dropdown member-list">
+							<a href="#">
+								<i class="fa fa-user"></i>
+							</a>
+							<!--
+                                <ul class="dropdown-menu drop-about" aria-labelledby="cart">
+									<li><a href="login.html">會員登入</a></li>
+									<li><a href="#">會員註冊</a></li>
+                                </ul>
+-->
+						</li>
+						<li class="dropdown cart-list">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="cart">
+								<i class="fa fa-shopping-cart"></i><ins>3</ins>
+							</a>
+							<ul class="dropdown-menu cart" aria-labelledby="cart">
+								<li>
+									<a href="product.html" class="fig text-center pull-left"><img src="http://placehold.it/130x150" alt=""></a>
+									<div>
+										<a href="product.html">塑膠椅</a>
+										<span class="price">
+												<span class="amount">1 x $47,50</span>
+										</span>
+									</div>
+								</li>
+								<li>
+									<a href="product.html" class="fig text-center pull-left"><img src="http://placehold.it/130x150" alt=""></a>
+									<div class="block">
+										<a href="product.html">塑膠椅</a>
+										<span class="price">
+												<span class="amount">3 x $89,99</span>
+										</span>
+									</div>
+								</li>
+								<li>
+									<a href="product.html" class="fig text-center pull-left"><img src="http://placehold.it/130x150" alt=""></a>
+									<div class="block">
+										<a href="product.html">塑膠椅</a>
+										<span class="price">
+												<span class="amount">1 x $7.900,99</span>
+										</span>
+									</div>
+								</li>
+								<br style="clear: both">
+								<div class="hcart-total">
+									<button class="btn btn-default btn-sm" type="submit">前往結帳</button>
+									<div class="total pull-left">總計 - <ins>$164,50</ins></div>
+								</div>
+							</ul>
+						</li>
+					</ul>
+					<div class="collapse navbar-collapse" id="navbar-collapse">
+						<ul class="nav navbar-nav navbar-right" aria-expanded="false">
+							<li class="active"><a href="start_business.html">首頁</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" id="product">商品</a>
+								<ul class="dropdown-menu drop-about" aria-labelledby="product">
+									<li><a href="catalog_grid_sidebar_1.html">商品分類一</a></li>
+									<li><a href="catalog_grid_sidebar_1.html">商品分類二</a></li>
+
+								</ul>
+							</li>
+							<li><a href="about.html">關於豐樂</a></li>
+							<li><a href="services.html">服務</a></li>
+							<li><a href="blog_list.html">部落格</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</nav>
+</div>
+<!-- /.Navigation -->	
 
 <!-- WRAPPER -->
 <div class="wrapper">
 
     <!-- .page-header -->
-    <header class="page-header container text-center">
+    <header id="page-header" class="page-header container text-center">
         <div class="col-sm-8 col-sm-offset-2">
             <div class="icon" data-icon="k"></div>
             <h1>— 付款結帳 —</h1>
@@ -962,5 +935,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.plugins.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/custom_fanlot.js"></script>
 </body>
 </html>
