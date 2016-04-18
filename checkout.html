@@ -69,7 +69,7 @@
 									<div>
 										<a href="product.html">塑膠椅</a>
 										<span class="price">
-												<span class="amount">1 x $47,50</span>
+								            <span class="amount">1 x $47,50</span>
 										</span>
 									</div>
 								</li>
@@ -78,7 +78,7 @@
 									<div class="block">
 										<a href="product.html">塑膠椅</a>
 										<span class="price">
-												<span class="amount">3 x $89,99</span>
+								            <span class="amount">3 x $89,99</span>
 										</span>
 									</div>
 								</li>
@@ -93,7 +93,7 @@
 								</li>
 								<br style="clear: both">
 								<div class="hcart-total">
-									<button class="btn btn-default btn-sm" type="submit">前往結帳</button>
+									<button class="btn btn-default btn-sm" type="submit" onClick="parent.location='cart.html'">前往購物車</button>
 									<div class="total pull-left">總計 - <ins>$164,50</ins></div>
 								</div>
 							</ul>
@@ -144,7 +144,7 @@
     <!-- CONTAINER -->
     <article class="container inforow">
        	<article class="container text-center" style="margin-bottom: 40px;">
-       		<h3 class="text-center margin-10">會員才能享有好願金權利，結帳前請先登入或加入會員</h3>
+       		<h3 class="text-center margin-10">會員才能享有 <span class="orange">好願金</span>  權利，結帳前請先登入或加入會員</h3>
 			<a href="login.html" class="btn btn-default btn-lg">會員登入</a>
 			<a href="login.html" class="btn btn-default btn-lg">註冊會員</a>
 		</article>
@@ -818,7 +818,7 @@
 					<div class="col-sm-6">
             			<div class="radio">
 							<label data-toggle="collapse" data-target="#location" data-parent="#payment">
-								<input type="radio" name="location" checked>
+								<input type="radio" name="location">
 								離島
 							</label>
 						</div>
@@ -829,7 +829,7 @@
             		<div class="col-sm-6">
             			<div class="radio">
 							<label data-toggle="collapse" data-target="#payment" data-parent="#payment">
-								<input type="radio" name="payment">
+								<input type="radio" name="payment" checked>
 								PayPal / 信用卡
 
 							</label>
@@ -838,7 +838,7 @@
 					<div class="col-sm-6">
             			<div class="radio">
 							<label data-toggle="collapse" data-target="#payment" data-parent="#payment">
-								<input type="radio" name="location" checked>
+								<input type="radio" name="payment">
 								智付寶
 							</label>
 						</div>
@@ -918,7 +918,7 @@
 
     <!-- CONTAINER -->
     <article class="container text-center">
-        <a href="order_view.html" class="btn btn-default btn-lg">送出訂單</a>
+        <a href="confirmation.html" class="btn btn-default btn-lg">送出訂單</a>
     </article>
     <!-- /.container -->
 </div>

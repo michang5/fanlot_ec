@@ -156,6 +156,7 @@ span#page-header {
 	padding: 0 16px;
 	line-height: 49px;
 	height: 49px;
+    margin: 0;
 }
 .side-nav .form-control {
 	background: white;
@@ -188,7 +189,10 @@ li.cart-list > .dropdown-menu li {
 	width: 100%;
 }
 .cart-list li {
-	padding: 20px 10px;
+	padding: 6px;
+}
+.cart-list .fig img {
+    width: 80px;
 }
 .cart-list > a {
 	display: inline;
@@ -218,6 +222,10 @@ li.cart-list > .dropdown-menu li {
 }
 .side-nav .dropdown .dropdown-menu.cart {
 	top: 50px;
+    max-width: 350px;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background: white;
 }
 .cart-list > a ins, .cart-list-empty > a ins {
 	padding: 1px 8px;
@@ -240,6 +248,8 @@ li.cart-list > .dropdown-menu li {
 }
 .hcart-total .btn {
 	float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .hcart-total a {
 	color: #fff;
