@@ -9,17 +9,28 @@
 .clearfix {
   *zoom: 1; /*For IE 6&7 only*/
 }
+.woocommerce-page hr, hr {
+/*	width: 100%!important;*/
+	max-width: none;
+}
 .btn {
 	margin: 10px;
 }
 .orange {
 	color: #e7543d;
 }
+
 .margin-10 {
 	margin: 10px!important;
 }
+.margin-30 {
+	margin: 30px!important;
+}
 .wrapper {
 	padding-top: 100px;
+}
+input[type=text], input[type=email], input[type=password], input[type=search], textarea, textarea.form-control {
+	height: 55px;
 }
 span#page-header {
 	height: 0;
@@ -63,7 +74,7 @@ span#page-header {
     font-size: 16px;
 }
 .nav-open .inner::before {
-	margin-top: 0px;
+	margin-top: 1px;
 	position: absolute;
 }
 .nav-open .inner::after {
@@ -270,7 +281,20 @@ li.cart-list > .dropdown-menu li {
 		left: auto;
 	}
 }
+/*
+@media screen and (min-width: 980px) {
+	.navbar-collapse.in {
+		
+	}
+}
+*/
 @media screen and (max-width: 980px) {
+	.navbar-nav {
+		margin: 10px auto;
+	}
+	.nav {
+		width: 100%;
+	}
 	.navbar {
 		border-bottom: 1px solid #eee;
 	}
@@ -292,18 +316,27 @@ li.cart-list > .dropdown-menu li {
 	}
 	.navbar .col-sm-9 {
 		padding-top: 6px;
-	}
-}
-@media screen and (max-width: 767px) {
-	.side-nav {
-		margin-top: -12px;
-		margin-right: 10px;
+		margin-top: -50px;
+		width: 100%;
 	}
 	.navbar .col-sm-3 {
         z-index: 9999;
         width: 40%;
 		padding-left: 0;
     }
+}
+@media screen and (max-width: 767px) {
+	.side-nav {
+		margin-top: -12px;
+		margin-right: 10px;
+	}
+/*
+	.navbar .col-sm-3 {
+        z-index: 9999;
+        width: 40%;
+		padding-left: 0;
+    }
+*/
     .navbar .col-sm-9 {
         margin-top: -50px;
 		z-index: 999;
@@ -361,4 +394,77 @@ li.cart-list > .dropdown-menu li {
 .donate-total h2 {
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+/*login*/
+.fb-blue {
+	background: #3b5998!important;
+	width: 80%;
+	margin-top: 0;
+}
+.gp-red {
+	background: #dc4e41!important;
+	width: 80%;
+	margin-top: 0;
+}
+.login-block {
+	background: #efefef;
+	padding: 30px;
+	margin-bottom: 50px;
+}
+.login-block h3 {
+	line-height: 1.5;
+	margin: 0 0 20px;
+}
+.login-block h4 {
+/*	text-align: left;*/
+	font-size: 20px;
+	line-height: 1.75;
+	margin: 0;
+}
+.login-block h4.text-center {
+	text-align: center;
+}
+.tip {
+	font-size: 15px;
+	color: #E7543D;
+	line-height: 2;
+	display: block;
+}
+.tip a {
+	text-decoration: underline;
+}
+p.note {
+	font-size: 16px;
+	line-height: 1.75;
+	margin: 10px 0;
+}
+.note-deco {
+	text-decoration: underline;
+}
+.note-block {
+	border: 1px dashed #ccc;
+	padding: 20px;
+	text-align: left;
+}
+.signup-block .checkbox label {
+	font-size: 16px;
+	text-align: left!important;
+}
+/*
+.input-half .form-group, .signup-block .checkbox labe, p.note.note-block {
+	width: 60%;
+	margin: 10px auto;
+}
+*/
+.checkbox {
+	text-align: left;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+@media screen and (max-width: 768px) {
+	.border-btm {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+	}
 }
