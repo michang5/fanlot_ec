@@ -132,19 +132,64 @@
         <div class="col-sm-8 col-sm-offset-2">
             <div class="icon" data-icon="Z"></div>
             <h1>會員資料</h1>
-        </div>
+        </div>	
     </header>
     <!-- /.page-header -->
 	<div class="container">
-		<div class="col-sm-6 col-sm-offset-3">
-			<div class="form-group">
-				<input class="form-control text-center" type="text" value="王大頭">
+		<div class="col-sm-6 col-sm-offset-3 account-block">
+<!--
+			<div class="panel-group" id="account">
+				<div class="panel clearfix">
+					<div class="radio">
+						<label data-toggle="collapse" data-target="#account-1" data-parent="#invoice">
+							三聯式紙本發票(公司行號報帳用)
+						</label>
+					</div>
+					<div id="account-1" class="collapse" data-parent="true">
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="公司名稱">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="統一編號">
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="form-group">
-				<input class="form-control text-center" type="text" value="dato@gmail.com">
-			</div>
-			<div class="form-group">
-				<input class="form-control text-center" type="text" value="0912345678">
+-->
+			<div class="panel-group" id="account">
+				<ul class="panel clearfix">
+					<li>姓名：王大頭</li>
+					<li>
+						<span>手機號碼：0912345678</span>
+						<span class="fix-btn" data-toggle="collapse" data-target="#account-1" data-parent="#account"><a href="#">修改手機號碼</a></span>
+						<div id="account-1" class="collapse" data-parent="true">
+							<span class="note">＊系統會透過簡訊進行驗證，確保是您持有的門號</span>
+							<div class="form-group">
+								<input class="form-control text-center" type="text"  placeholder="*請輸入手機號碼">
+								<span class="tip">驗證碼有效期限：20分00秒</span>
+							</div>
+							<div class="form-group">
+								<input class="form-control text-center" type="text"  placeholder="*請輸入簡訊內之驗證碼">
+								<span class="tip">驗證碼沒有填對喔！請重新輸入，或<a href="#">重發驗證碼</a></span>
+								<span class="tip">驗證碼已過期，請<a href="#">重發驗證碼</a></span>
+								<span class="note">還想沿用舊號碼嗎？<a href="#">請點這裡取消</a></span>
+								<a href="#" class="btn btn-default btn-sm">送出更新</a>
+							</div>
+						</div>
+						
+					</li>
+					<li>
+						<span>Email：DATO@gmail.com</span>
+						<span class="fix-btn" data-toggle="collapse" data-target="#account-2" data-parent="#account"><a href="#">修改常用電子信箱</a></span>
+						<div id="account-2" class="collapse" data-parent="true">
+							<div class="form-group">
+								<input class="form-control text-center" type="text"  placeholder="*請輸入新的電子郵件信箱">
+							</div>
+							<a href="#" class="btn btn-default btn-sm">送出更新</a>
+						</div>
+						
+					</li>
+				</ul>
 			</div>
 		</div>	
 	</div>

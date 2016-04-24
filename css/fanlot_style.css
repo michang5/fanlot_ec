@@ -450,12 +450,6 @@ p.note {
 	font-size: 16px;
 	text-align: left!important;
 }
-/*
-.input-half .form-group, .signup-block .checkbox labe, p.note.note-block {
-	width: 60%;
-	margin: 10px auto;
-}
-*/
 .checkbox {
 	text-align: left;
 	margin-top: 14px;
@@ -466,5 +460,50 @@ p.note {
 		border-bottom: 1px solid #ccc;
 		margin-bottom: 40px;
 		padding-bottom: 40px;
+	}
+}
+
+.account-block  ul li {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	line-height: 46px;
+}
+.account-block ul li > span {
+	display: inline-block;
+/*	vertical-align: bottom;*/
+	margin-top: 15px;
+}
+.account-block ul li .fix-btn {
+	float: right;
+	background: #f7b430;
+	line-height: 30px;
+/*	margin-top: 15px;*/
+	border-radius: 3px;
+}
+.account-block ul li .fix-btn a {
+	color: #fff;
+	font-size: 15px;
+	display: block;
+	padding: 4px 10px;
+	border-radius: 3px;
+}
+.account-block ul li .fix-btn a:hover {
+	background: #814500;
+}
+span.note {
+	font-size: 15px;
+	margin: 10px 0;
+	display: inline-block;
+}
+.form-group:last-of-type {
+	margin-bottom: 10px;
+}
+.account-block .btn-sm {
+	display: block;
+	margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+	.account-block > ul li > span {
+		display: block;
 	}
 }
