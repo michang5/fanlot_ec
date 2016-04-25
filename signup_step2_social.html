@@ -131,34 +131,53 @@
     <header id="page-header" class="page-header container text-center">
         <div class="col-sm-8 col-sm-offset-2">
             <div class="icon" data-icon="Z"></div>
-            <h1>會員註冊</h1>
+            <h1>補充基本資料</h1>
         </div>
     </header>
     <!-- /.page-header -->
 
     <!-- CONTAINER -->
-    <article class="container text-center signup-block input-half">
+    <article class="container text-center signup-block">
     	<h4>為確保豐樂網能迅速反應您的客服需求，<br>請您撥冗留下正確的聯絡方式。</h4>
 		<p>豐樂網會致力保護您的個資，也不會主動向您撥打銷售電話</p>
 		<hr class="margin-30">
-		<div class="col-sm-8 col-sm-offset-2">
+		<div class="col-sm-6 col-sm-offset-3">
 			<div class="form-group">
 				<input class="form-control text-center" type="text" placeholder="*請輸入您的姓名">
 			</div>
-		
-			<p class="note">我們需要您在此輸入常用的電子信箱，來收取帳單資訊，以及來自系統的重要訊息。系統會透過發送驗證信來確保您填寫正確的信箱位址。</p>
+		    
+			<p class="note">為確保手機門號的正確性，系統會透過簡訊進行驗證</p>
 			<div class="form-group">
-				<input class="form-control text-center" type="email"  placeholder="*請輸入您常用的電子郵件信箱">
+			    <div class="input-group">
+                    <input type="text" class="form-control" placeholder="*請輸入手機號碼">
+                    <span class="input-group-btn">
+                        <button class="btn btn-defult" type="button">發送驗證碼</button>
+                    </span>
+                </div>
+			    <span class="tip text-left">驗證碼有效期限：10分00秒</span>
+			</div>
+			<div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="*請輸入簡訊內之驗證碼">
+                    <span class="input-group-btn">
+                        <button class="btn btn-defult" type="button">送出驗證碼</button>
+                    </span>
+                </div>
+                <span class="tip text-left">驗證碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發驗證碼</a></span>
+			</div>
+<!--
+			<div class="form-group">
+				<input class="form-control text-center" type="text"  placeholder="*請輸入您的手機號碼">
 			</div>
 			<div class="form-group">
 				<input class="form-control text-center" type="text"  placeholder="*請輸入簡訊內之驗證碼">
-				<span class="tip">驗證信有效期限：10分00秒</span>
+				<span class="tip">驗證碼有效期限：10分00秒</span>
 			</div>
-			<p class="note note-block">請至您所填寫的電子郵件信箱內<br>
-				1. 打開「豐樂網會員電子信箱驗證信」<br>
-				2. 點擊信中的驗證連結<br>
-				
-				（如您沒有收到驗證信，請檢查垃圾郵件信箱，或檢查您所填寫的電子信箱是否正確） </p>
+-->
+			<p class="note">如您的社群帳號所使用的電子信箱非您常用信箱，<br>您可在此輸入常用信箱，來收取<b>帳單資訊，以及來自系統的重要訊息</b></p>
+			<div class="form-group">
+				<input class="form-control text-center" type="text"  placeholder="*請輸入您常用的電子郵件信箱">
+			</div>
 			<div class="checkbox">
 				<label><input type="checkbox" value="">同意接受網站使用條款</label>
 			</div>

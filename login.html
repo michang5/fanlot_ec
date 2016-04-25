@@ -145,20 +145,28 @@
 		</div>
 		<div class="col-sm-6">
 			<h4>先前使用手機號註冊者</h4>
-			
 			<div class="form-group">
-				<input class="form-control text-center" type="text" placeholder="*請輸入手機號碼">
+			    <div class="input-group">
+                    <input type="text" class="form-control" placeholder="*請輸入手機號碼">
+                    <span class="input-group-btn">
+                        <button class="btn btn-defult" type="button">送出</button>
+                    </span>
+                </div>
+			    <span class="tip text-left">驗證碼有效期限：10分00秒</span>
 			</div>
 			<div class="form-group">
-				<input class="form-control text-center" type="text" placeholder="*請輸入動態密碼">
-				<span class="tip">驗證信有效期限：10分00秒 </span>
-
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="*請輸入動態密碼">
+                    <span class="input-group-btn">
+                        <button class="btn btn-defult" type="button">送出</button>
+                    </span>
+                </div>
+                <span class="tip text-left">動態密碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發密碼</a></span>
 			</div>
-			<a href="signup_step2_mobile.html" class="btn btn-default">登錄</a>
-			<p>還不是會員嗎？<a href="signup.html">請點這裡註冊</a></p>
 <!--			<p class="form-control-static"><a href="lost_password.html">Lost Password?</a></p>-->
 		</div>
 	</article>
+    <p class="text-center note-deco"><a href="login.html">已經註冊過了嗎？請點這裡登錄</a></p>
     <!-- /.container -->
 </div>
 <!-- /.wrapper -->

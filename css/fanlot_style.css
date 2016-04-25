@@ -16,6 +16,23 @@
 .btn {
 	margin: 10px;
 }
+.btn-mini {
+    padding: 4px 10px;
+    margin: 0 6px;
+/*    background: #f7b430;*/
+    background: #814500;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none!important;
+}
+.btn-mini:hover {
+    color: #fff;
+}
+.input-group-btn .btn {
+    margin: 0;
+    background: #E7543D;
+    color: #fff;
+}
 .orange {
 	color: #e7543d;
 }
@@ -31,6 +48,7 @@
 }
 input[type=text], input[type=email], input[type=password], input[type=search], textarea, textarea.form-control {
 	height: 55px;
+    margin-bottom: 10px;
 }
 span#page-header {
 	height: 0;
@@ -424,11 +442,23 @@ li.cart-list > .dropdown-menu li {
 .login-block h4.text-center {
 	text-align: center;
 }
+.login-block ~ div.col-sm-6 input {
+/*    width: 80%;*/
+    margin: 5px auto;
+}
+.login-block ~ div.col-sm-6 .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.login-block ~ p {
+    margin-top: 30px;
+}
 .tip {
 	font-size: 15px;
 	color: #E7543D;
 	line-height: 2;
 	display: block;
+    margin: 10px auto;
 }
 .tip a {
 	text-decoration: underline;
@@ -488,12 +518,16 @@ p.note {
 	border-radius: 3px;
 }
 .account-block ul li .fix-btn a:hover {
-	background: #814500;
+	background: #E49D10;
 }
 span.note {
 	font-size: 15px;
+    line-height: 1.6;
 	margin: 10px 0;
 	display: inline-block;
+}
+.form-group {
+    margin: 0;
 }
 .form-group:last-of-type {
 	margin-bottom: 10px;

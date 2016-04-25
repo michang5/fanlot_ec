@@ -137,51 +137,51 @@
     <!-- /.page-header -->
 	<div class="container">
 		<div class="col-sm-6 col-sm-offset-3 account-block">
+<!--
+			<div class="panel-group" id="account">
+				<div class="panel clearfix">
+					<div class="radio">
+						<label data-toggle="collapse" data-target="#account-1" data-parent="#invoice">
+							三聯式紙本發票(公司行號報帳用)
+						</label>
+					</div>
+					<div id="account-1" class="collapse" data-parent="true">
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="公司名稱">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="統一編號">
+						</div>
+					</div>
+				</div>
+			</div>
+-->
 			<div class="panel-group" id="account">
 				<ul class="panel clearfix">
 					<li>姓名：王大頭</li>
 					<li>
-						<span>手機號碼：0912345678</span>
-						<span class="fix-btn" data-toggle="collapse" data-target="#account-1" data-parent="#account"><a>修改手機號碼</a></span>
+						<span>認證信箱：DATO@gmail.com</span>
+						<span class="fix-btn" data-toggle="collapse" data-target="#account-1" data-parent="#account"><a href="#">修改電子信箱</a></span>
 						<div id="account-1" class="collapse" data-parent="true">
-							<span class="note">＊系統會透過簡訊進行驗證，確保是您持有的門號</span>
+							<span class="note">＊系統會透過發送認證信至您新指定的信箱，確保您填寫的資料正確</span>
 							<div class="form-group">
+<!--								<input class="form-control text-center" type="text"  placeholder="*請輸入新的電子郵件信箱">-->
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="*請輸入手機號碼">
+                                    <input type="text" class="form-control" placeholder="*請輸入您常用的電子郵件信箱">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-defult" type="button">發送驗證碼</button>
+                                        <button class="btn btn-defult" type="button">發送驗證信</button>
                                     </span>
                                 </div>
-                                <span class="tip text-left">驗證碼有效期限：10分00秒</span>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="*請輸入簡訊內之驗證碼">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-defult" type="button">送出驗證碼</button>
-                                    </span>
-                                </div>
-                                <span class="tip text-left">驗證碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發驗證碼</a></span>
-                            </div>
-                            <span class="note">還想沿用舊號碼嗎？<span data-toggle="collapse" data-target="#account-1" data-parent="#account"><a href="#">請點這裡取消</a></span></span>
-						</div>
-						
-					</li>
-					<li>
-						<span>Email：DATO@gmail.com</span>
-						<span class="fix-btn" data-toggle="collapse" data-target="#account-2" data-parent="#account"><a>修改常用電子信箱</a></span>
-						<div id="account-2" class="collapse" data-parent="true">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="*請輸入新的電子郵件信箱">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-defult" type="button">送出更新</button>
-                                    </span>
-                                </div>
-                                <span class="tip text-left">驗證碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發驗證碼</a></span>
+								<span class="tip">驗證碼有效期限：10分00秒</span>
+                                <p class="note note-block">
+                                    請至您所填寫的電子郵件信箱內<br>
+                                    <b>1. 打開「豐樂網會員電子信箱驗證信」</b><br>
+                                    <b>2. 點擊信中的驗證連結</b><br>
+                                    （如您沒有收到驗證信，請檢查<b>垃圾郵件信箱</b>，或檢查您所填寫的電子信箱是否正確）   
+                                </p>
+                               
                             </div>
 						</div>
-						
 					</li>
 				</ul>
 			</div>

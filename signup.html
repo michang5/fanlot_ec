@@ -148,27 +148,35 @@
 		
 		<div class="col-sm-6 border-btm">
 			<h4>您可使用社群帳號註冊</h4>
-			<p>豐樂網不會替您貼文，您的社群好友也不會知悉您已加入會員</p>
-			<a href="#" class="btn fb-blue">Facebook 帳號登錄</a>
-			<a href="#" class="btn gp-red">Google+ 帳號登錄</a>
+			<p>豐樂網不會替您貼文，<br>您的社群好友也不會知悉您已加入會員</p>
+			<a href="#" class="btn fb-blue">Facebook 帳號註冊</a>
+			<a href="#" class="btn gp-red">Google+ 帳號註冊</a>
 		</div>
 		
 		<div class="col-sm-6">
 			<h4>您也可使用手機號註冊</h4>
 			<p>系統會透過簡訊進行驗證，<br>確保是您持有的門號</p>
 			<div class="form-group">
-				<input class="form-control text-center" type="text" placeholder="*請輸入手機號碼">
+			    <div class="input-group">
+                    <input type="text" class="form-control" placeholder="*請輸入手機號碼">
+                    <span class="input-group-btn">
+                        <button class="btn btn-defult" type="button">送出</button>
+                    </span>
+                </div>
+			    <span class="tip text-left">驗證碼有效期限：10分00秒</span>
 			</div>
 			<div class="form-group">
-				<input class="form-control text-center" type="text"  placeholder="*請輸入簡訊內之驗證碼">
-				<span class="tip">驗證碼沒有填對喔！請重新輸入，<a href="#">或重發驗證碼</a></span>
-				<span class="tip">驗證碼已過期，<a href="#">請重發驗證碼</a></span>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="*請輸入簡訊內之驗證碼">
+                    <span class="input-group-btn">
+                        <button class="btn btn-defult" type="button">送出</button>
+                    </span>
+                </div>
+                <span class="tip text-left">驗證碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發驗證碼</a></span>
 			</div>
-			<a href="#" class="btn btn-default">登錄</a>
-			<p>已經註冊過了嗎？<a href="login.html">請點這裡登錄</a></p>
-<!--			<p class="form-control-static"><a href="lost_password.html">Lost Password?</a></p>-->
 		</div>
 	</article>
+   <p class="text-center note-deco"><a href="login.html">已經註冊過了嗎？請點這裡登錄</a></p>
     <!-- /.container -->
 </div>
 <!-- /.wrapper -->
