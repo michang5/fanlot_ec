@@ -541,3 +541,40 @@ span.note {
 		display: block;
 	}
 }
+
+/*product*/
+.btn-container {
+	margin-left: -10px;
+	margin-bottom: 30px;
+}
+.overlay {
+	position: relative;
+	height: 450px;
+}
+.overlay .white-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.7);
+	z-index: 100;
+}
+.modal .container {
+	width: 100%;
+}
+.modal .form-group {
+	width: 80%;
+	margin: 0 auto;
+}
+.modal .login-block {
+	margin-bottom: 10px;
+}
+.woocommerce-page .modal h4 {
+	margin: 10px auto 30px;
+}
+@media screen and (min-width: 768px) {
+	.modal-dialog {
+		width: 90%;
+	}
+}
