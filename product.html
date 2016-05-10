@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>豐樂網</title>
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fanlot_style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<h2 class="logo">
-							<a href="#page-top">豐樂網</a>
+							<a href="#page-top"><img src="images/funlot_logo.png" alt="">豐樂網</a>
 						</h2>
 				</div>
 				<div class="col-sm-9">
@@ -502,50 +502,50 @@
 <!--member-login-->
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
 	<div class="modal-dialog member-login">
+	
 		<div class="modal-content">
-		<button type="button" class="close clearfix" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
-		<div class="modal-body login-frame">
-
-			<!-- CONTAINER -->
-			<article class="container text-center">
-				<div class="col-sm-6 border-btm">
-					<h4>先前使用社群帳號註冊者</h4>
-					<a href="signup_step2_social.html" class="btn fb-blue">Facebook 帳號登錄</a>
-					<a href="signup_step2_social.html" class="btn gp-red">Google+ 帳號登錄</a>
-				</div>
-				<div class="col-sm-6">
-					<h4>先前使用手機號註冊者</h4>
-					<div class="form-group">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="*請輸入手機號碼">
-							<span class="input-group-btn">
-							<button class="btn btn-defult" type="button">送出</button>
-						</span>
-						</div>
-						<span class="tip text-left">驗證碼有效期限：10分00秒</span>
-					</div>
-					<div class="form-group">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="*請輸入動態密碼">
-							<span class="input-group-btn">
-							<button class="btn btn-defult" type="button">送出</button>
-						</span>
-						</div>
-						<span class="tip text-left">動態密碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發密碼</a></span>
-					</div>
-				</div>
-			</article>
-			<p class="text-center note-deco"><a data-dismiss="modal" data-target="#signup" data-toggle="modal">還不是會員嗎？請點這裡註冊</a></p>
-		</div>
-	</div>
-</div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body login-frame">
+                <!-- CONTAINER -->
+                <article class="container text-center">
+                    <div class="col-sm-6 border-btm">
+                        <h4>先前使用社群帳號註冊者</h4>
+                        <a class="btn fb-blue" type="button" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">Facebook 帳號登錄</a>
+                        <a class="btn gp-red" type="button" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">Google+ 帳號登錄</a>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4>先前使用手機號註冊者</h4>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="*請輸入手機號碼">
+                                <span class="input-group-btn">
+                                <button class="btn btn-defult" type="button">送出</button>
+                            </span>
+                            </div>
+                            <span class="tip text-left">驗證碼有效期限：10分00秒</span>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="*請輸入動態密碼">
+                                <span class="input-group-btn">
+                                <button class="btn btn-defult" type="button">送出</button>
+                            </span>
+                            </div>
+                            <span class="tip text-left">動態密碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發密碼</a></span>
+                        </div>
+                    </div>
+                </article>
+                <p class="text-center note-deco"><a data-dismiss="modal" data-target="#signup" data-toggle="modal">還不是會員嗎？請點這裡註冊</a></p>
+            </div>
+	    </div>
+    </div>
 </div>
 
 <!--signup modal-->
 <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
 	<div class="modal-dialog member-login">
 		<div class="modal-content">
-			<button type="button" class="close clearfix" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
 			 <article class="container text-center">
 				<div class="login-block">
 					<h3>感謝您對豐樂網的社會企業使命的認同！<br>註冊會員將能享有：</h3>
@@ -597,7 +597,7 @@
 <div class="modal fade" id="social-step2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
 	<div class="modal-dialog member-login">
 		<div class="modal-content">
-			<button type="button" class="close clearfix" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
 			<article class="container text-center signup-block">
 				<h4>為確保豐樂網能迅速反應您的客服需求，<br>請您撥冗留下正確的聯絡方式。</h4>
 				<p>豐樂網會致力保護您的個資，也不會主動向您撥打銷售電話</p>
@@ -660,7 +660,7 @@
 <div class="modal fade" id="mobile-step2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
 	<div class="modal-dialog member-login">
 		<div class="modal-content">
-			<button type="button" class="close clearfix" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
 			<article class="container text-center signup-block input-half">
 				<h2>補充基本資料</h2>
 				<h4>為確保豐樂網能迅速反應您的客服需求，<br>請您撥冗留下正確的聯絡方式。</h4>

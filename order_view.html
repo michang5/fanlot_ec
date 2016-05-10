@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>豐樂網</title>
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fanlot_style.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<h2 class="logo">
-							<a href="#page-top">豐樂網</a>
+							<a href="#page-top"><img src="images/funlot_logo.png" alt="">豐樂網</a>
 						</h2>
 				</div>
 				<div class="col-sm-9">
@@ -131,7 +131,7 @@
     <header id="page-header" class="page-header container text-center">
         <div class="col-sm-8 col-sm-offset-2">
             <div class="icon" data-icon="Z"></div>
-            <h1>— 帳號（訂單資訊才對吧？） —</h1>
+            <h1>— 訂單資訊 —</h1>
         </div>
     </header>
     <!-- /.page-header -->
@@ -188,53 +188,66 @@
 
     <!-- CONTAINER -->
     <article class="container">
-        <div class="table-responsive">
-            <table class="table shop_table cart text-center">
-                <thead>
-                <tr>
-                    <th></th>
-                    <th class="text-left">產品</th>
-                    <th class="text-center">單價</th>
-                    <th class="text-center">數量</th>
-                    <th class="text-center">小計</th>
-                </tr>
-                </thead>
-                <tbody>
+        <div class="col-sm-12">
+            <div class="table-responsive">
+                <table class="table shop_table cart text-center">
+                    <thead>
                     <tr>
-                        <td class="product-thumbnail text-left"><a href="product.html"><img src="http://placehold.it/100x100" alt=""></a></td>
-                        <td class="product-name text-left"><a href="product.html">Contemporary chair</a></td>
-                        <td class="product-price">$ 159,00 </td>
-                        <td class="product-quantity text-primary">1</td>
-                        <td class="product-subtotal">$ 159,00 </td>
+                        <th></th>
+                        <th class="text-left">產品</th>
+                        <th class="text-center">單價</th>
+                        <th class="text-center">數量</th>
+                        <th class="text-center">運送方式</th>
+                        <th class="text-center">小計</th>
                     </tr>
-                    <tr>
-                        <td class="product-thumbnail text-left"><a href="product.html"><img src="http://placehold.it/100x100" alt=""></a></td>
-                        <td class="product-name text-left"><a href="product.html">Plastic chair</a></td>
-                        <td class="product-price">$ 80,00 </td>
-                        <td class="product-quantity text-primary">1</td>
-                        <td class="product-subtotal">$ 80,00 </td>
-                    </tr>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-thumbnail text-left"><a href="product.html"><img src="http://placehold.it/100" alt=""></a></td>
+                            <td class="product-name text-left"><a href="product.html">當代風格椅</a></td>
+                            <td class="product-price">$ 159,00 </td>
+                            <td class="product-quantity">1</td>
+                            <td class="product-shipment">常溫</td>
+                            <td class="product-subtotal">$ 159,00 </td>
+                        </tr>
+                        <tr>
+                            <td class="product-thumbnail text-left"><a href="product.html"><img src="http://placehold.it/100" alt=""></a></td>
+                            <td class="product-name text-left"><a href="product.html">塑膠椅</a></td>
+                            <td class="product-price">$ 80,00 </td>
+                            <td class="product-quantity">1</td>
+                            <td class="product-shipment">低溫</td>
+                            <td class="product-subtotal">$ 80,00 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </article>
     <!-- /.container -->
-
+	
     <!-- CONTAINER -->
     <article class="container no-padding-top">
         <div class="col-sm-6 col-sm-offset-6">
             <table class="table cart-total">
                 <tr>
                     <th>購物車總金額</th>
-                    <td class="text-primary">$ 2 840,00</td>
+                    <td class="text-primary">$ 2.840,00</td>
                 </tr>
                 <tr>
-                    <th>運費/手續費</th>
-                    <td class="text-primary">免運費</td>
+                    <th>運費（常溫）</th>
+                    <td class="text-primary">$--</td>
                 </tr>
                 <tr>
-                    <th>訂單總價</th>
-                    <td class="text-primary">$ 2 840,00</td>
+                    <th>運費（低溫）</th>
+                    <td class="text-primary">$--</td>
+                </tr>
+                <tr>
+                    <th>寄送地點</th>
+                    <td class="text-primary">本島</td>
+                </tr>
+                <tr>
+                    <th>訂單金額</th>
+                    <td class="text-primary">$ 2.840,00</td>
                 </tr>
             </table>
         </div>

@@ -130,6 +130,7 @@ span#page-header {
 	border-bottom: 1px solid #ccc;
 	padding-top: 7px;
 	padding-bottom: 7px;
+    background: #fff0b5;
 }
 .navbar.past-main h2 {
 	font-size: 26px;
@@ -210,6 +211,9 @@ span#page-header {
 	display: block;
 	width: 100%;
 }
+.side-nav i {
+/*    color: #ec6833;*/
+}
 li.cart-list > .dropdown-menu {
 	width: 320px;
 }
@@ -260,11 +264,12 @@ li.cart-list > .dropdown-menu li {
 	padding: 1px 8px;
 	line-height: 22px;
 	font-size: 14px;
+/*    background: #ec6833*/
 }
 .side-nav .btn {
 	background: #e7543d;
 }
-.side-nav ul.dropdown-menu{
+.side-nav ul.dropdown-menu {
 	width: auto;
 	position: absolute;
 }
@@ -272,15 +277,16 @@ li.cart-list > .dropdown-menu li {
 	text-align: center;
 	
 }
-.hcart-total {
+.cart-total {
 	padding-top: 10px;
+    text-align: right;
 }
-.hcart-total .btn {
+.cart-total .btn {
 	float: left;
     padding-left: 10px;
     padding-right: 10px;
 }
-.hcart-total a {
+.cart-total a {
 	color: #fff;
 }
 @media screen and (min-width: 768px) {
@@ -401,8 +407,13 @@ li.cart-list > .dropdown-menu li {
 .Shipping-conditions > .col-sm-7, .Shipping-conditions > .col-sm-5, .Shipping-conditions > .col-sm-12 {
 	margin-bottom: 26px;
 }
+/*
 .panel-group {
 	margin-left: 40px;
+}
+*/
+.panel li {
+    display: block;
 }
 .donate-total {
 	background: #efefef;
@@ -480,6 +491,9 @@ p.note {
 	font-size: 16px;
 	text-align: left!important;
 }
+.radio label {
+    color: #333!important;
+}
 .checkbox {
 	text-align: left;
 	margin-top: 14px;
@@ -495,19 +509,22 @@ p.note {
 
 .account-block  ul li {
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 10px;
+/*	padding-bottom: 10px;*/
 	line-height: 46px;
+    margin: 10px 0;
 }
 .account-block ul li > span {
-	display: inline-block;
+    display: block;
+/*	display: inline-block;*/
 /*	vertical-align: bottom;*/
-	margin-top: 15px;
+/*	margin-top: 15px;*/
 }
 .account-block ul li .fix-btn {
 	float: right;
 	background: #f7b430;
 	line-height: 30px;
 /*	margin-top: 15px;*/
+    margin-bottom: 15px;
 	border-radius: 3px;
 }
 .account-block ul li .fix-btn a {
@@ -573,8 +590,56 @@ span.note {
 .woocommerce-page .modal h4 {
 	margin: 10px auto 30px;
 }
+.modal p.note-deco a:hover {
+    color: #e7543d;
+}
+.modal {
+    background: rgba(255,255,255,.9);
+}
+.modal-content {
+    border: 0;
+}
+button.close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+}
+.close {
+    font-size: 30px;
+}
+/*
+.modal-content {
+    
+}
+
+.modal-body {
+   padding-top: 60px; 
+}
+*/
+.modal .container {
+    padding-top: 60px;
+}
+/*
+button.close {
+    background: red;
+    width: 50px;
+    height: 50px;
+}
+*/
+.footer {
+    background: #607100;
+    
+}
+.footer * {
+    color: #fff!important;
+}
 @media screen and (min-width: 768px) {
 	.modal-dialog {
 		width: 90%;
 	}
+    .modal-content {
+        box-shadow: 0 0 0 rgba(255,255,255,0);
+    }
 }
