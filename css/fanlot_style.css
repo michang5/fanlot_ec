@@ -33,10 +33,13 @@
     background: #E7543D;
     color: #fff;
 }
+
+.logo img {
+    max-height: 60px;
+}
 .orange {
 	color: #e7543d;
 }
-
 .margin-10 {
 	margin: 10px!important;
 }
@@ -134,7 +137,10 @@ span#page-header {
 }
 .navbar.past-main h2 {
 	font-size: 26px;
-	margin: 9px 0;
+	margin: 1px 0;
+}
+.navbar.past-main h2.logo img{
+	height: 40px;
 }
 .navbar {
     background: white;	
@@ -147,7 +153,7 @@ span#page-header {
 }
 .navbar h2 {
 	display: inline-block;
-	margin: 12px 0;
+	margin: 1px 0;
 }
 .navbar a {
     color: #333;   
@@ -642,4 +648,12 @@ button.close {
     .modal-content {
         box-shadow: 0 0 0 rgba(255,255,255,0);
     }
+}
+
+.item_content {  
+    padding-left: 22px;
+}
+.item_content li {
+    list-style: square;
+    text-align: left;
 }
