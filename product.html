@@ -247,17 +247,17 @@
                         </div>
                     </div>
                 </div>
-
+				<h3 class="text-center"> — 新增您的產品評測 —</h3>
                 <div class="col-sm-6 col-sm-offset-3">
-                    <h3>新增您的產品評測 —</h3>
-                    <h4>為保持豐樂網優質開明的討論品質。只有正式會員才能發表評測喔！</h4>
-					<div class="btn-container">
-						<a data-toggle="modal" data-target="#signup" class="btn btn-default btn-md">註冊成為會員</a>
-                    	<a data-toggle="modal" data-target="#login" class="btn btn-default btn-md">會員登入</a>
-					</div>
-					<div class="overlay clearfix">
-						<div class="white-mask">
+					<div class="overlay clearfix">	
+						<div class="review-content">
+							
+							<h4>為保持豐樂網優質開明的討論品質。<br>只有正式會員才能發表評測喔！</h4>
+							<div class="btn-container">
+								<a data-toggle="modal" data-target="#signup" class="btn btn-default btn-md">會員登入 / 註冊會員</a>
+							</div>
 						</div>
+						<div class="white-mask"></div>
 						<div class="rating-wrap">
 							<div class="raty"></div>
 						</div>
@@ -495,47 +495,7 @@
 </footer>
 <!-- /.footer -->
 
-<!--member-login-->
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-	<div class="modal-dialog member-login">
-	
-		<div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="modal-body login-frame">
-                <!-- CONTAINER -->
-                <article class="container text-center">
-                    <div class="col-sm-6 border-btm">
-                        <h4>先前使用社群帳號註冊者</h4>
-                        <a class="btn fb-blue" type="button" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">Facebook 帳號登錄</a>
-                        <a class="btn gp-red" type="button" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">Google+ 帳號登錄</a>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4>先前使用手機號註冊者</h4>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="*請輸入手機號碼">
-                                <span class="input-group-btn">
-                                <button class="btn btn-defult" type="button">送出</button>
-                            </span>
-                            </div>
-                            <span class="tip text-left">驗證碼有效期限：10分00秒</span>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="*請輸入動態密碼">
-                                <span class="input-group-btn">
-                                <button class="btn btn-defult" type="button">送出</button>
-                            </span>
-                            </div>
-                            <span class="tip text-left">動態密碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發密碼</a></span>
-                        </div>
-                    </div>
-                </article>
-                <p class="text-center note-deco"><a data-dismiss="modal" data-target="#signup" data-toggle="modal">還不是會員嗎？請點這裡註冊</a></p>
-            </div>
-	    </div>
-    </div>
-</div>
+<a class="btn fb-blue" type="button" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">Facebook 帳號註冊</a>
 
 <!--signup modal-->
 <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -543,48 +503,27 @@
 		<div class="modal-content">
              <button type="button" class="close" data-dismiss="modal">&times;</button>
 			 <article class="container text-center">
-				<div class="login-block">
-					<h3>感謝您對豐樂網的社會企業使命的認同！<br>註冊會員將能享有：</h3>
-					<h4>
-					1. 購物累積「好願金」的功能 <a href="#">Q：「好願金」是什麼？</a><br>
-					2. 記錄帳單/出貨地址資訊、以及過去消費記錄，往後購物更方便
-					</h4>
+				<div class="login-block clearfix col-sm-8 col-sm-offset-2">
+					<h4>感謝您對豐樂網的社會企業使命的認同！<br>註冊會員將能享有：</h4>
+					<ul class="col-sm-10 col-sm-offset-1 clearfix">
+						<li>加入會員前 30 天，消費皆享九折優惠（不限次數）</li>
+						<li>購物累積「好願金」的功能 <a href="#">Q：「好願金」是什麼？</a></li>
+						<li>記錄帳單/出貨地址資訊、以及過去消費記錄</li>
+					</ul>
 				</div>
-		
-				<div class="col-sm-6 border-btm">
-					<h4>您可使用社群帳號註冊</h4>
-					<p>豐樂網不會替您貼文，<br>您的社群好友也不會知悉您已加入會員</p>
-					<a class="btn fb-blue" type="button" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">Facebook 帳號註冊</a>
-					<a class="btn gp-red" type="button" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">Google+ 帳號註冊</a>
-				</div>
-		
-				<div class="col-sm-6">
-					<h4>您也可使用手機號註冊</h4>
-					<p>系統會透過簡訊進行驗證，<br>確保是您持有的門號</p>
+
+				<div class="col-sm-6 col-sm-offset-3">
 					<div class="form-group">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="*請輸入手機號碼">
-							<span class="input-group-btn">
-								<button class="btn btn-defult" type="button">送出</button>
-							</span>
-						</div>
-						<span class="tip text-left">驗證碼有效期限：10分00秒</span>
+						<input type="text" class="form-control" placeholder="*請輸入手機號碼">
+						<a class="btn btn-default btn-md btn-block disabled">發送簡訊驗證碼</a>
+						<a class="btn btn-default btn-md btn-block" data-dismiss="modal" data-target="#social-step2" data-toggle="modal">發送簡訊驗證碼</a>
+						<a class="btn btn-default btn-md btn-block disabled">驗證碼有效期限：03分00秒</a>
+						<span class="tip-gray">註冊即同意 <a href="">服務條款</a> 與 <a href="privacy.html">隱私權政策</a></span>
+						<input type="text" class="form-control" placeholder="*請輸入驗證碼" id="load">
+						<input type="text" class="form-control load-spinner" placeholder="12345678">
 					</div>
-					<div class="form-group">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="*請輸入簡訊內之驗證碼">
-							<span class="input-group-btn">
-								<a class="btn btn-defult" type="button" data-dismiss="modal" data-target="#mobile-step2" data-toggle="modal">送出</a>
-							</span>
-						</div>
-						<span class="tip text-left">驗證碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發驗證碼</a></span>
-					</div>
-				</div>
+				</div>	
 			</article>
-			<p class="text-center note-deco">
-				<a class="line" data-dismiss="modal" data-target="#login" data-toggle="modal">已經註冊過了嗎？請點這裡登錄
-				</a>
-			</p>
 		</div>
 	</div>
 </div>
@@ -594,60 +533,24 @@
 	<div class="modal-dialog member-login">
 		<div class="modal-content">
 		    <button type="button" class="close" data-dismiss="modal">&times;</button>
-			<article class="container text-center signup-block">
-				<h4>為確保豐樂網能迅速反應您的客服需求，<br>請您撥冗留下正確的聯絡方式。</h4>
-				<p>豐樂網會致力保護您的個資，也不會主動向您撥打銷售電話</p>
+			<article class="container text-center signup-block input-half">
+				<h4>豐樂網會致力保護您的個資，也不會主動向您撥打銷售電話</h4>
 				<hr class="margin-30">
-				<div class="col-sm-6 col-sm-offset-3">
+				<div class="col-sm-4 col-sm-offset-4">
 					<div class="form-group">
 						<input class="form-control text-center" type="text" placeholder="*請輸入您的姓名">
 					</div>
-					<p class="note">為確保手機門號的正確性，系統會透過簡訊進行驗證</p>
 					<div class="form-group">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="*請輸入手機號碼">
-							<span class="input-group-btn">
-								<button class="btn btn-defult" type="button">發送驗證碼</button>
-							</span>
-						</div>
-						<span class="tip text-left">驗證碼有效期限：10分00秒</span>
+						<input class="form-control text-center" type="text" placeholder="*請輸入您常用的電子郵件信箱">
 					</div>
+					<p class="note">我們需要您在此輸入常用的電子信箱，來收取帳單資訊，以及來自系統的重要訊息。</p>
 					<div class="form-group">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="*請輸入簡訊內之驗證碼">
-							<span class="input-group-btn">
-								<button class="btn btn-defult" type="button">送出驗證碼</button>
-							</span>
-						</div>
-						<span class="tip text-left">驗證碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發驗證碼</a></span>
+						<input class="form-control text-center" type="text" value="電話：0912345678" disabled>
 					</div>
-		<!--
-					<div class="form-group">
-						<input class="form-control text-center" type="text"  placeholder="*請輸入您的手機號碼">
-					</div>
-					<div class="form-group">
-						<input class="form-control text-center" type="text"  placeholder="*請輸入簡訊內之驗證碼">
-						<span class="tip">驗證碼有效期限：10分00秒</span>
-					</div>
-		-->
-					<p class="note">如您的社群帳號所使用的電子信箱非您常用信箱，<br>您可在此輸入常用信箱，來收取<b>帳單資訊，以及來自系統的重要訊息</b></p>
-					<div class="form-group">
-						<input class="form-control text-center" type="text"  placeholder="*請輸入您常用的電子郵件信箱">
-					</div>
-					<div class="checkbox">
-						<label><input type="checkbox" value="">同意接受網站使用條款</label>
-					</div>
-					<div class="checkbox">
-						<label><input type="checkbox" value="">同意收到不定時會員獨享優惠資訊</label>
-					</div>
-				</div>
-				<div class="col-md-12 signup-block">
-					<a href="#" class="btn btn-default">確認送出</a>
+					<a href="#" class="btn btn-default btn-block">儲存個人資料</a>
 					<p>再次感謝您的時間與耐心！</p>
-					<p class="note note-deco"><a href="#">暫時不想註冊嗎？不是會員一樣能完成購物喔！點這裡取消註冊</a></p>
-				</div>	
+				</div>
 			</article>
-    
 		</div>
 	</div>
 </div>

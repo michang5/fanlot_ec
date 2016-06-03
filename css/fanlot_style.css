@@ -33,7 +33,24 @@
     background: #E7543D;
     color: #fff;
 }
-
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
+	border: 0;
+}
+.btn-default.disabled {
+	line-height: 55px;
+}
+.btn.btn-info {
+	border-color: #E7543D;
+	border-radius: 3px;
+	color: #E7543D;
+}
+.btn.btn-info:hover {
+	background: #E7543D;
+}
+.load-spinner {
+    background: url('../images/ajax-loader.gif') no-repeat 98% center;
+	background-size: 30px;
+}
 .logo img {
     max-height: 60px;
 }
@@ -53,6 +70,11 @@ input[type=text], input[type=email], input[type=password], input[type=search], t
 	height: 55px;
     margin-bottom: 10px;
 }
+.form-control::-webkit-input-placeholder { color: #555; }
+.form-control:-moz-placeholder { color: #555; }
+.form-control::-moz-placeholder { color: #555;}
+.form-control:-ms-input-placeholder { color: #555; }
+
 span#page-header {
 	height: 0;
 	padding: 0;
@@ -360,6 +382,10 @@ li.cart-list > .dropdown-menu li {
 		margin-top: -12px;
 		margin-right: 10px;
 	}
+	.btn {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 /*
 	.navbar .col-sm-3 {
         z-index: 9999;
@@ -431,6 +457,11 @@ li.cart-list > .dropdown-menu li {
 	margin-bottom: 40px;
 }
 /*login*/
+.btn.btn-block {
+	margin: 0;
+	margin-top: 10px;
+/*	margin-bottom: 10px;*/
+}
 .fb-blue {
 	background: #3b5998!important;
 	width: 80%;
@@ -442,9 +473,11 @@ li.cart-list > .dropdown-menu li {
 	margin-top: 0;
 }
 .login-block {
-	background: #efefef;
+/*	background: #efefef;*/
+	border: 2px dashed #ccc;
 	padding: 30px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 .login-block h3 {
 	line-height: 1.5;
@@ -467,19 +500,36 @@ li.cart-list > .dropdown-menu li {
     padding-left: 20px;
     padding-right: 20px;
 }
+.login-block p {
+	margin-bottom: 0;
+}
 .login-block ~ p {
     margin-top: 30px;
 }
-.tip {
+.login-block ul {
+	margin-bottom: 0;
+	display: inline-block;
+/*	width: 60%;*/
+/*	margin: 0 auto;*/
+}
+.login-block ul li {
+	list-style: decimal;
+	text-align-last: left;
+}
+.tip, .tip-gray {
 	font-size: 15px;
 	color: #E7543D;
 	line-height: 2;
 	display: block;
     margin: 10px auto;
 }
-.tip a {
+.tip a, .tip-gray a {
 	text-decoration: underline;
 }
+.tip-gray {
+	color: #555;
+}
+
 p.note {
 	font-size: 16px;
 	line-height: 1.75;
@@ -583,11 +633,20 @@ span.note {
 	background: rgba(255,255,255,.7);
 	z-index: 100;
 }
+.overlay .review-content {
+	padding: 40px;
+	position: absolute;
+	z-index: 101;
+	text-align: center;
+}
+.overlay .review-content h4 {
+	line-height: 1.7;
+}
 .modal .container {
 	width: 100%;
 }
 .modal .form-group {
-	width: 80%;
+/*	width: 80%;*/
 	margin: 0 auto;
 }
 .modal .login-block {
@@ -604,6 +663,9 @@ span.note {
 }
 .modal-content {
     border: 0;
+}
+.modal p {
+	margin: 20px 0;
 }
 button.close {
     width: 40px;

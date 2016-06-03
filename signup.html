@@ -129,52 +129,34 @@
     <header id="page-header" class="page-header container text-center">
         <div class="col-sm-8 col-sm-offset-2">
             <div class="icon" data-icon="Z"></div>
-            <h1>會員註冊</h1>
+            <h1>會員註冊/登入</h1>
         </div>
     </header>
     <!-- /.page-header -->
 
     <!-- CONTAINER -->
     <article class="container text-center">
-		<div class="login-block">
-			<h3>感謝您對豐樂網的社會企業使命的認同！<br>註冊會員將能享有：</h3>
-			<h4>
-			1. 購物累積「好願金」的功能 <a href="#">Q：「好願金」是什麼？</a><br>
-			2. 記錄帳單/出貨地址資訊、以及過去消費記錄，往後購物更方便
-			</h4>
+		<div class="login-block clearfix col-sm-8 col-sm-offset-2">
+			<h4>感謝您對豐樂網的社會企業使命的認同！<br>註冊會員將能享有：</h4>
+			<ul class="col-sm-10 col-sm-offset-1 clearfix">
+				<li>加入會員前 30 天，消費皆享九折優惠（不限次數）</li>
+				<li>購物累積「好願金」的功能 <a href="#">Q：「好願金」是什麼？</a></li>
+				<li>記錄帳單/出貨地址資訊、以及過去消費記錄</li>
+			</ul>
 		</div>
 		
-		<div class="col-sm-6 border-btm">
-			<h4>您可使用社群帳號註冊</h4>
-			<p>豐樂網不會替您貼文，<br>您的社群好友也不會知悉您已加入會員</p>
-			<a href="#" class="btn fb-blue">Facebook 帳號註冊</a>
-			<a href="#" class="btn gp-red">Google+ 帳號註冊</a>
-		</div>
-		
-		<div class="col-sm-6">
-			<h4>您也可使用手機號註冊</h4>
-			<p>系統會透過簡訊進行驗證，<br>確保是您持有的門號</p>
+		<div class="col-sm-6 col-sm-offset-3">
 			<div class="form-group">
-			    <div class="input-group">
-                    <input type="text" class="form-control" placeholder="*請輸入手機號碼">
-                    <span class="input-group-btn">
-                        <button class="btn btn-defult" type="button">送出</button>
-                    </span>
-                </div>
-			    <span class="tip text-left">驗證碼有效期限：10分00秒</span>
+		    	<input type="text" class="form-control" placeholder="*請輸入手機號碼">
+		    	<a class="btn btn-default btn-md btn-block disabled">發送簡訊驗證碼</a>
+		    	<a class="btn btn-default btn-md btn-block">發送簡訊驗證碼</a>
+		    	<a class="btn btn-default btn-md btn-block disabled">驗證碼有效期限：03分00秒</a>
+		    	<span class="tip-gray">註冊即同意 <a href="">服務條款</a> 與 <a href="privacy.html">隱私權政策</a></span>
+		    	<input type="text" class="form-control" placeholder="*請輸入驗證碼" id="load">
+		    	<input type="text" class="form-control load-spinner" placeholder="12345678">
 			</div>
-			<div class="form-group">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="*請輸入簡訊內之驗證碼">
-                    <span class="input-group-btn">
-                        <button class="btn btn-defult" type="button">送出</button>
-                    </span>
-                </div>
-                <span class="tip text-left">驗證碼沒有填對喔！請重新輸入，或<a class="btn-mini" href="#">重發驗證碼</a></span>
-			</div>
-		</div>
+		</div>	
 	</article>
-   <p class="text-center note-deco"><a href="login.html">已經註冊過了嗎？請點這裡登錄</a></p>
     <!-- /.container -->
 </div>
 <!-- /.wrapper -->
